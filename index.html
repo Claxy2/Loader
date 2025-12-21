@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key System Interface</title>
     <style>
-        /* Modern dark background (not pitch black) */
+
         body {
             background-color: #1a1a1c;
             margin: 0;
@@ -19,7 +19,7 @@
             user-select: none;
         }
 
-        /* macOS Style Window */
+
         #mac-window {
             width: 420px;
             height: 320px;
@@ -32,7 +32,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Title Bar - Height increased for easier dragging */
+
         #window-header {
             height: 48px;
             background: #f1f1f1;
@@ -70,7 +70,6 @@
             pointer-events: none;
         }
 
-        /* Window Content */
         .content {
             flex: 1;
             display: flex;
@@ -82,7 +81,6 @@
             color: #333;
         }
 
-        /* Logo Placeholder */
         .app-icon {
             width: 60px;
             height: 60px;
@@ -113,7 +111,6 @@
             margin-bottom: 25px;
         }
 
-        /* Action Button */
         .get-key-btn {
             background-color: #007aff;
             color: white;
@@ -173,7 +170,6 @@
     </div>
 
     <script>
-        // Smooth Drag-and-Drop functionality
         const dragItem = document.querySelector("#mac-window");
         const header = document.querySelector("#window-header");
 
