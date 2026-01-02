@@ -1,1 +1,21 @@
+repeat task.wait() until game:IsLoaded()
+task.wait(2)
 
+local intro = game:GetService("StarterGui"):WaitForChild("Intro")
+
+if intro:FindFirstChild("Message2") then
+    intro.Message2.Text = "VORO HUB PRESENTS"
+end
+
+local oldSounds = {"Gasp", "Gavel", "TypeWriter"}
+for _, name in pairs(oldSounds) do
+    local s = intro:FindFirstChild(name)
+    if s then s:Destroy() end
+end
+
+local newSound = Instance.new("Sound")
+newSound.Name = "VoroHubAudio"
+newSound.SoundId = "rbxassetid://136763125195329"
+newSound.Parent = intro
+newSound.Volume = 1
+newSound:Play()
